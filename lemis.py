@@ -24,7 +24,7 @@ print(data.columns)
 #slice month, port, quantity int new subset to make it easier to look at
 subset = data[['port','month','quantity','unit']]
 print(subset)
-print("The number of imports by different unit is:\n",
+print("The number of imports reported as different units are:\n",
       data[["quantity", "unit"]].groupby("unit").count())
 #print(subset[["month", "port","quantity"]].groupby("month").sum('quantity'))
 #print(subset.groupby('month','port')['quantity'].agg(['sum','count']))
